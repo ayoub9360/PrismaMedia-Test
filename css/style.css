@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
+
+html {
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+header {
+  background-image: url(/Assets/Assets/header-bg-2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+  header #open, header #close {
+    display: none; }
+  header img {
+    position: absolute;
+    margin-top: 100px;
+    width: 70%; }
+  header nav {
+    z-index: 5;
+    width: 100%;
+    background-color: #0000008f;
+    padding: 30px 0;
+    position: fixed;
+    top: 0; }
+    header nav ul {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none; }
+      header nav ul li a {
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif; }
+
+.description {
+  display: flex;
+  justify-content: space-around; }
+  .description #pub {
+    position: sticky;
+    top: 10%;
+    z-index: -1;
+    display: block;
+    margin: auto;
+    margin-top: 100px; }
+  .description article {
+    position: relative;
+    width: 50%; }
+    .description article h1 {
+      padding: 100px 0 40px;
+      max-width: 40%;
+      margin: auto; }
+    .description article p {
+      max-width: 40%;
+      margin: auto;
+      padding-bottom: 100px;
+      font-size: 18px; }
+    .description article img {
+      margin: 100px 0 0; }
+
+.kiloren {
+  height: 1024px;
+  background-image: url(/Assets/Assets/kiloren.png);
+  background-size: cover;
+  background-position: center; }
+
+.galaxy {
+  padding: 100px 0; }
+  .galaxy h2 {
+    text-align: center;
+    padding: 0 0 30px;
+    font-size: 32px; }
+  .galaxy article {
+    width: 70%;
+    margin: auto; }
+    .galaxy article p {
+      line-height: 30px; }
+    .galaxy article p:nth-child(1) {
+      float: left;
+      margin: 0 20px 20px 0; }
+
+footer {
+  color: #9B9B9B;
+  font-weight: 300; }
+  footer a {
+    color: #9B9B9B;
+    text-decoration: underline; }
+  footer .stormBg img {
+    width: 100%;
+    display: inherit; }
+  footer .footerNav {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-image: url(/Assets/Assets/darthvader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    footer .footerNav article {
+      width: calc(100% / 3);
+      padding-bottom: 80px; }
+      footer .footerNav article ul {
+        list-style: none; }
+        footer .footerNav article ul li {
+          padding: 5px 0; }
+    footer .footerNav article:nth-child(1) {
+      width: 100%;
+      padding: 50px 0; }
+  footer .reseau p {
+    text-transform: uppercase;
+    font-size: 14px; }
+  footer .reseau ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer .reseau ul li {
+      list-style: none;
+      margin: 5px; }
+      footer .reseau ul li img {
+        height: 50px; }
+
+@media screen and (max-width: 700px) {
+  header img {
+    width: 90%; }
+  main .description {
+    display: block; }
+    main .description article {
+      width: 100%; }
+      main .description article h1, main .description article p {
+        max-width: 80%;
+        text-align: center; }
+      main .description article img {
+        width: 80%; }
+    main .description #pub {
+      display: none; }
+  main .kiloren {
+    height: 400px; }
+  main .galaxy h2 {
+    text-align: center; }
+  main .galaxy article p:nth-child(1) {
+    margin: 0; }
+    main .galaxy article p:nth-child(1) img {
+      width: 100%; }
+  footer .stormBg {
+    overflow: hidden; }
+    footer .stormBg img {
+      height: 250px;
+      width: auto; }
+  footer .footerNav article {
+    width: 50%;
+    font-size: 12px; }
+  footer .footerNav article:nth-child(1) {
+    visibility: hidden; }
+  footer .footerNav article:nth-child(4) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .footerNav article:nth-child(4) p {
+      margin: 0 15px; } }
+
+@media screen and (max-width: 1100px) {
+  header nav {
+    z-index: 2; }
+    header nav article {
+      padding: 10px; }
+    header nav #open {
+      display: block;
+      position: fixed;
+      top: -70px;
+      right: 30px;
+      width: 30px;
+      height: 30px; }
+    header nav #close {
+      display: block;
+      position: fixed;
+      top: -70px;
+      left: 30px;
+      width: 30px;
+      height: 30px;
+      display: none; }
+    header nav ul {
+      flex-direction: column;
+      display: none; }
+  header img {
+    width: 90%; }
+  main .description {
+    display: block; }
+    main .description article {
+      width: 100%; }
+      main .description article h1, main .description article p {
+        max-width: 80%;
+        text-align: center; }
+      main .description article img {
+        width: 80%; }
+    main .description #pub {
+      display: none; }
+  main .kiloren {
+    height: 400px; }
+  main .galaxy h2 {
+    text-align: center; }
+  main .galaxy article p:nth-child(1) {
+    margin: 0; }
+    main .galaxy article p:nth-child(1) img {
+      width: 100%; }
+  footer .stormBg {
+    overflow: hidden; }
+    footer .stormBg img {
+      height: 250px;
+      width: auto; }
+  footer .footerNav article {
+    width: 50%;
+    font-size: 12px; }
+  footer .footerNav article:nth-child(1) {
+    visibility: hidden; }
+  footer .footerNav article:nth-child(4) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .footerNav article:nth-child(4) p {
+      margin: 0 15px; } }

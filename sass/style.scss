@@ -1,0 +1,14 @@
+//Initial
+@import './helpers/variables.scss';
+@import './components/reset.scss';
+
+//Scss
+@import './components/header.scss';
+@import './components/description.scss';
+@import './components/kiloren.scss';
+@import './components/galaxy.scss';
+@import './components/footer.scss';
+
+//Responsive
+@import './components/mobile.scss';
+@import './components/tablette.scss';
